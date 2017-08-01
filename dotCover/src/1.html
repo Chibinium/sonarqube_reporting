@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>C:\Users\corba\documents\visual studio 2015\Projects\HelloWorld\HelloWorldTest\UnitTest1.cs</title>
+    <script type="text/javascript" src="../js/dotcover.sourceview.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/dotcover.report.css" />
+  </head>
+  <body>
+    <pre id="content" class="source-code">
+using HelloWorld;
+using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+namespace HelloWorld.Tests
+{
+    [TestClass()]
+    public class UnitTest1
+    {
+        [TestMethod()]
+        public void passHelloWorld()
+        {
+            string actual = &quot;HelloWorld!&quot;;
+            Assert.AreEqual(HelloTest.HelloWorld.returnHelloWorld(), actual);
+        }
+
+        [TestMethod()]
+        public void failBizarroWorld()
+        {
+            string actual = &quot;Bizarro World!&quot;;
+            Assert.AreNotEqual(HelloTest.HelloWorld.returnHelloWorld(), actual);
+        }
+    }
+}
+
+    </pre>
+    <script type="text/javascript">
+      highlightRanges([[12,9,12,10,1],[13,13,13,43,1],[14,13,14,78,1],[15,9,15,10,1],[19,9,19,10,1],[20,13,20,46,1],[21,13,21,81,1],[22,9,22,10,1]]);
+    </script>
+  </body>
+</html>
